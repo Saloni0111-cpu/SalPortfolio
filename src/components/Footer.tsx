@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 interface FooterProps {
   darkMode: boolean;
@@ -14,18 +14,16 @@ export default function Footer({ darkMode }: FooterProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Parent container */}
-        <div className="relative flex flex-col md:flex-row items-center justify-center">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0">
           
           {/* Centered Text */}
           <div
-            className={`text-center ${
+            className={`text-center md:text-left ${
               darkMode ? 'text-gray-400' : 'text-gray-600'
             }`}
           >
-            <p className="flex items-center justify-center space-x-2">
-              <span>Designed and developed </span>
-              
+            <p className="flex items-center justify-center md:justify-start space-x-2">
+              <span>Designed and developed</span>
               <span>by Saloni Zade</span>
             </p>
             <p className="text-sm mt-1">
@@ -33,8 +31,8 @@ export default function Footer({ darkMode }: FooterProps) {
             </p>
           </div>
 
-          {/* Right-aligned Icons */}
-          <div className="absolute right-0 flex space-x-6 mt-6 md:mt-0">
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-end space-x-6">
             <a
               href="https://github.com/Saloni0111-cpu"
               target="_blank"
