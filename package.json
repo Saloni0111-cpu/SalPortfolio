@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
   },
   "dependencies": {
+    "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.13.8",
     "@supabase/supabase-js": "^2.57.4",
     "framer-motion": "^12.23.24",
